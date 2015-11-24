@@ -3,7 +3,7 @@
 	"displayName": "Velocity",
 	"description": "Java Velocity Syntax Highlighting",
 	"version": "0.0.1",
-	"publisher": "soda",
+	"publisher": "sodatea",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
