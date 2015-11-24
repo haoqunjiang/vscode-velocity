@@ -2,7 +2,7 @@
 	"name": "velocity",
 	"displayName": "Velocity",
 	"description": "Java Velocity Syntax Highlighting",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "sodatea",
 	"engines": {
 		"vscode": "^0.10.1"
@@ -29,5 +29,6 @@
 			"scopeName": "text.html.velocity",
 			"path": "./syntaxes/VelocityHTML.tmLanguage"
 		}]
-	}
+	},
+	"icon": "./velocity_logo.png"
 }
