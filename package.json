@@ -1,0 +1,33 @@
+{
+	"name": "velocity",
+	"displayName": "Velocity",
+	"description": "Java Velocity Syntax Highlighting",
+	"version": "0.0.1",
+	"publisher": "soda",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "velocity",
+			"aliases": ["Velocity", "velocity"],
+			"extensions": [".vm", ".fhtml"]
+		}],
+		"grammars": [{
+			"language": "html",
+			"scopeName": "text.html.basic",
+			"path": "./syntaxes/HTML.tmLanguage"
+		}, {
+			"language": "velocity",
+			"scopeName": "text.velocity",
+			"path": "./syntaxes/Velocity.tmLanguage"
+		}, {
+			"language": "velocity",
+			"scopeName": "text.html.velocity",
+			"path": "./syntaxes/VelocityHTML.tmLanguage"
+		}]
+	}
+}
