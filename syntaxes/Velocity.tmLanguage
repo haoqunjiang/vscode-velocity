@@ -86,7 +86,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\*\#\n?</string>
+					<string>\*\#</string>
 					<key>name</key>
 					<string>comment.block.documentation</string>
 				</dict>
@@ -102,7 +102,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\*\#\n?</string>
+					<string>\*\#</string>
 					<key>name</key>
 					<string>comment.block</string>
 				</dict>
