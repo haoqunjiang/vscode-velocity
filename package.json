@@ -17,10 +17,6 @@
 			"extensions": [".vm", ".fhtml"]
 		}],
 		"grammars": [{
-			"language": "html",
-			"scopeName": "text.html.basic",
-			"path": "./syntaxes/HTML.tmLanguage"
-		}, {
 			"language": "velocity",
 			"scopeName": "text.velocity",
 			"path": "./syntaxes/Velocity.tmLanguage"
