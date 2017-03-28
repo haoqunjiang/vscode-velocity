@@ -1,9 +1,13 @@
 {
 	"name": "velocity",
 	"displayName": "Velocity",
-	"description": "Java Velocity Syntax Highlighting",
+	"description": "Apache Velocity Template Language Syntax Highlighting",
 	"version": "0.0.3",
 	"publisher": "sodatea",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sodatea/vscode-velocity.git"
+	},
 	"engines": {
 		"vscode": "^0.10.1"
 	},
@@ -14,7 +18,7 @@
 		"languages": [{
 			"id": "velocity",
 			"aliases": ["Velocity", "velocity"],
-			"extensions": [".vm", ".fhtml"]
+			"extensions": [".vm", ".fhtml", ".vtl"]
 		}],
 		"grammars": [{
 			"language": "velocity",
@@ -26,5 +30,26 @@
 			"path": "./syntaxes/VelocityHTML.tmLanguage"
 		}]
 	},
-	"icon": "https://nzxbwjjh8.qnssl.com/velocity_logo.png"
+	"bugs": {
+		"url": "https://github.com/sodatea/vscode-velocity/issues"
+	},
+	"homepage": "https://github.com/sodatea/vscode-velocity#readme",
+	"dependencies": {},
+	"devDependencies": {},
+	"keywords": [
+		"visual",
+		"studio",
+		"code",
+		"vtl",
+		"vm",
+		"velocity",
+		"template",
+		"markup",
+		"language"
+	],
+	"icon": "./velocity_logo.svg",
+	"galleryBanner": {
+		"color": "#333399",
+		"theme": "dark"
+	}
 }
