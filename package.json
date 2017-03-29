@@ -37,15 +37,11 @@
 	"dependencies": {},
 	"devDependencies": {},
 	"keywords": [
-		"visual",
-		"studio",
-		"code",
 		"vtl",
 		"vm",
 		"velocity",
 		"template",
-		"markup",
-		"language"
+		"markup"
 	],
 	"icon": "velocity_logo.svg",
 	"galleryBanner": {
