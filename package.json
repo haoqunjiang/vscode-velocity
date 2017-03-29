@@ -47,7 +47,7 @@
 		"markup",
 		"language"
 	],
-	"icon": "./velocity_logo.svg",
+	"icon": "velocity_logo.svg",
 	"galleryBanner": {
 		"color": "#333399",
 		"theme": "dark"
