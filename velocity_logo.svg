@@ -1,0 +1,14 @@
+<svg viewBox="-10 -10 20 20" xmlns="http://www.w3.org/2000/svg"
+stroke-width="1.5" stroke="#339" fill="#339" marker-end="url(#e)">
+	<defs>
+		<marker id="e" orient="auto" refX="2"
+		viewBox="0 -5 10 10" markerWidth="2" markerHeight="2">
+			<path d="m 0,-5 l 10,5 l -10,5z" stroke="none" />
+		</marker>
+	</defs>
+	<circle r="5" stroke="#000" fill="none" />
+	<path d="m-5, 0 v-7" />
+	<path d="m 0,-5 h 7" />
+	<path d="m 0, 5 h-7" />
+	<path d="m 5, 0 v 7" />
+</svg>
