@@ -1,51 +1,63 @@
 {
-	"name": "velocity",
-	"displayName": "Velocity",
-	"description": "Apache Velocity Template Language Syntax Highlighting",
-	"version": "0.0.3",
-	"publisher": "sodatea",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/sodatea/vscode-velocity.git"
-	},
-	"engines": {
-		"vscode": "^1.0.0"
-	},
-	"categories": [
-		"Languages"
-	],
-	"contributes": {
-		"languages": [{
-			"id": "velocity",
-			"aliases": ["Velocity", "velocity"],
-			"extensions": [".vm", ".fhtml", ".vtl"]
-		}],
-		"grammars": [{
-			"language": "velocity",
-			"scopeName": "text.velocity",
-			"path": "./syntaxes/Velocity.tmLanguage"
-		}, {
-			"language": "velocity",
-			"scopeName": "text.html.velocity",
-			"path": "./syntaxes/VelocityHTML.tmLanguage"
-		}]
-	},
-	"bugs": {
-		"url": "https://github.com/sodatea/vscode-velocity/issues"
-	},
-	"homepage": "https://github.com/sodatea/vscode-velocity#readme",
-	"dependencies": {},
-	"devDependencies": {},
-	"keywords": [
-		"vtl",
-		"vm",
-		"velocity",
-		"template",
-		"markup"
-	],
-	"icon": "velocity_logo.svg",
-	"galleryBanner": {
-		"color": "#333399",
-		"theme": "dark"
-	}
+    "name": "velocity",
+    "displayName": "Velocity",
+    "description": "Apache Velocity Template Language Syntax Highlighting",
+    "version": "0.1.0",
+    "publisher": "sodatea",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sodatea/vscode-velocity.git"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "velocity",
+                "aliases": [
+                    "Velocity",
+                    "velocity"
+                ],
+                "extensions": [
+                    ".vm",
+                    ".fhtml",
+                    ".vtl"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "velocity",
+                "scopeName": "text.velocity",
+                "path": "./syntaxes/Velocity.tmLanguage"
+            },
+            {
+                "language": "velocity",
+                "scopeName": "text.html.velocity",
+                "path": "./syntaxes/VelocityHTML.tmLanguage"
+            }
+        ]
+    },
+    "bugs": {
+        "url": "https://github.com/sodatea/vscode-velocity/issues"
+    },
+    "homepage": "https://github.com/sodatea/vscode-velocity#readme",
+    "dependencies": {},
+    "devDependencies": {},
+    "keywords": [
+        "vtl",
+        "vm",
+        "velocity",
+        "template",
+        "markup"
+    ],
+    "icon": "velocity_logo.svg",
+    "galleryBanner": {
+        "color": "#333399",
+        "theme": "dark"
+    }
 }
