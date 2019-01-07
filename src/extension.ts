@@ -5,8 +5,7 @@ import * as vscode from 'vscode';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-  let sel: vscode.DocumentSelector = { scheme: 'untitled', language: 'velocity' };
-  const rangeProvider = vscode.languages.registerFoldingRangeProvider(sel, new VelocityRangeProvider());
+  const rangeProvider = vscode.languages.registerFoldingRangeProvider('velocity', new VelocityRangeProvider());
   context.subscriptions.push(rangeProvider);
 }
 // this method is called when your extension is deactivated
@@ -26,7 +25,6 @@ class VelocityRange {
 
 class VelocityRangeProvider implements vscode.FoldingRangeProvider {
   provideFoldingRanges(document: vscode.TextDocument, context: vscode.FoldingContext, token: vscode.CancellationToken): vscode.FoldingRange[] {
-    const test = this.createRanges(document);
     return this.createRanges(document)
       .filter(r => r.end !== null && r.start !== r.end)
       .map(r => new vscode.FoldingRange(r.start, r.end));
