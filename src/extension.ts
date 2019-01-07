@@ -52,25 +52,12 @@ class VelocityRangeProvider implements vscode.FoldingRangeProvider {
           const startToken = /macro|^(?!else)if|foreach/g.exec(match);
           if (startToken) {
             ranges.push(new VelocityRange(startToken[0], lineNumber));
-          } else if (match == "elseif") {
+          } else if (match == "elseif" || match == "else") {
             // Close the last range
             if (ranges.length > 0) {
               const lastRange = ranges[ranges.length - 1];
-              if (lastRange.type == "if" && lastRange.end === null) {
-                lastRange.end = lineNumber;
-                completedRanges.push(ranges.pop());
-              }
-            }
-
-            // Create a new Range
-            ranges.push(new VelocityRange(match, lineNumber));
-          } else if (match == "else") {
-            // Close the last range
-            if (ranges.length > 0) {
-              const lastRange = ranges[ranges.length - 1];
-              if (/if|elseif/g.test(lastRange.type)
-                && lastRange.end === null) {
-                lastRange.end = lineNumber;
+              if (/if|elseif/g.test(lastRange.type) && lastRange.end === null) {
+                lastRange.end = lineNumber - 1;
                 completedRanges.push(ranges.pop());
               }
             }
@@ -80,7 +67,7 @@ class VelocityRangeProvider implements vscode.FoldingRangeProvider {
           } else if (match == "end" && ranges.length > 0) {
             const lastRange = ranges[ranges.length - 1];
             if (lastRange.end === null) {
-              lastRange.end = lineNumber;
+              lastRange.end = lineNumber - 1;
               completedRanges.push(ranges.pop());
             }
           }
