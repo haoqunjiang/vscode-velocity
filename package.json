@@ -58,9 +58,7 @@
         "url": "https://github.com/sodatea/vscode-velocity/issues"
     },
     "homepage": "https://github.com/sodatea/vscode-velocity#readme",
-    "dependencies": {
-        "npm": "^6.5.0"
-    },
+    "dependencies": {},
     "devDependencies": {
         "@types/node": "^8.10.25",
         "tslint": "^5.11.0",
