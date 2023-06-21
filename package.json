@@ -2,7 +2,7 @@
     "name": "velocity-template-language",
     "displayName": "Velocity Template Language",
     "description": "Apache Velocity Template Language Syntax Highlighting",
-    "version": "0.1.0",
+    "version": "0.3.0",
     "publisher": "sodatea",
     "repository": {
         "type": "git",
