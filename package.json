@@ -51,20 +51,18 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "pack": "vsce package",
-        "postinstall": "node ./node_modules/vscode/bin/install"
+        "pack": "vsce package"
     },
     "bugs": {
         "url": "https://github.com/sodatea/vscode-velocity/issues"
     },
     "homepage": "https://github.com/sodatea/vscode-velocity#readme",
-    "dependencies": {},
     "devDependencies": {
         "@types/node": "^8.10.25",
+        "@types/vscode": "1.25.0",
+        "@vscode/vsce": "^2.19.0",
         "tslint": "^5.11.0",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.22",
-        "vsce": "^1.54.0"
+        "typescript": "^2.6.1"
     },
     "keywords": [
         "vtl",
