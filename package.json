@@ -1,5 +1,5 @@
 {
-    "name": "velocity-template-language",
+    "name": "velocity",
     "displayName": "Velocity Template Language",
     "description": "Apache Velocity Template Language Syntax Highlighting",
     "version": "0.3.0",
